@@ -71,7 +71,7 @@
             transition: 0.2s ease;
             &:hover{
                 border-color: transparent;
-                color: $blue-hover;
+                // color: $blue-hover;
             }
         }
         
@@ -107,21 +107,16 @@
 .h-bg{
     color: white !important;
 }
-.h-bg.blue{
-    background-color: $blue;
-    &:hover{
-        background-color: $blue-hover;
-    }
-}
-.h-bg.green{
-    background-color: $green;
-    &:hover{
-        background-color: $green-hover;
-    }
-}
-.h-bg.dark-blue{
-    background-color: $dark-blue;
-}
+// .h-bg.blue{
+//     background-color: $blue;
+//     &:hover{
+//         background-color: $blue-hover;
+//     }
+// }
+
+// .h-bg.dark-blue{
+//     background-color: $dark-blue;
+// }
 .h-bg.black{
     background-color: $black;
 }

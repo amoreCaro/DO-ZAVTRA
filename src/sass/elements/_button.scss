@@ -6,8 +6,8 @@
     border: none;
     text-decoration: none;
     height: 80px;
-    padding: 30px 60px;
-    border-radius: 16px;
+    padding: 30px 72px;
+    border-radius: 40px;
     font-size: 1.25rem;
     font-weight: 400;
     transition: 0.4s ease;
@@ -22,8 +22,9 @@
 
 
 .btn-primary{
+    background-color: #3248E4;
     span{
-        color: black; 
+        color: white; 
         font-weight: 400;
     }
 }
