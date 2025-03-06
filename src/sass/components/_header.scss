@@ -13,11 +13,12 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1180px;
+    max-width: 1280px;
     height: 100%;
     padding: 10px;
     margin: 0 auto;
     transition: 0.5s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
   &__logo {
     max-width: 183px;
@@ -29,6 +30,8 @@
     }
   }
   &__nav {
+    position: relative;
+    left: -102px;
     ul {
       display: flex;
       align-items: center;
@@ -48,7 +51,9 @@
     a {
       font-weight: 500;
       font-size: 16px;
+      line-height: 18px;
       line-height: 100%;
+      font-weight: 500; 
       color: #fff;
       transition: 0.4s ease;
       &:hover {
@@ -64,7 +69,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 260px;
+    max-width: 170px;
     width: 100%;
   }
   &__button {
@@ -189,12 +194,12 @@
     top: -30px;
     left: 0;
     filter: blur(5px);
-    background: linear-gradient(to bottom, #f0f0f0, transparent);
+    // background: linear-gradient(to bottom, #f0f0f0, transparent);
     z-index: -1;
   }
   .header-desktop {
     box-shadow: 0px 10px 40px rgba(32, 70, 210, 0.1);
-    border-radius: 20px;
+    // border-radius: 20px;
     // background: white;
   }
 }
