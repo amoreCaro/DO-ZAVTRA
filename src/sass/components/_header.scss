@@ -4,6 +4,7 @@
     top: 0;
     z-index: 100;
     width: 100%;
+    height: 72px;
     margin: 20px auto 23px auto;
     transition: position 1s ease-in;
     &__wrapper {
@@ -19,9 +20,9 @@
         transition: 0.5s ease;
     }
     &__logo{
-        max-width: 263px;
+        max-width: 183px;
         width: 100%;
-        height: 60px;
+        height: 23.22px;
         img{
             width: 100%;
             height: 100%;
@@ -38,11 +39,14 @@
             font-weight: 500;
             font-size: 16px;
             line-height: 100%;
-            color: #30313D;
+            color: #fff;
             transition: 0.4s ease;
             &:hover{
                 color: $primary;
             }
+        }
+        svg {
+            margin-left: 12px;
         }
     }
 
@@ -58,30 +62,29 @@
         align-items: center;
         justify-content: center;
         width: 100%;
-        height: 60px;
+        height: 50px;
         border-radius: 12px;
         transition: 0.3s ease;
         svg{
             transition: 0.1s ease;
         }
     }
-    &__button-call{
-        width: 100%;
-        max-width: 60px;
-        border: 1px solid #E6E6E6;
-        &:hover{
-            background-color: $primary;
-            border-color: $primary;
-            path{
-                stroke: white;
-            }
-        }
-    }
+    // &__button-call{
+    //     width: 100%;
+    //     max-width: 60px;
+    //     border: 1px solid #E6E6E6;
+    //     &:hover{
+    //         background-color: $primary;
+    //         border-color: $primary;
+    //         path{
+    //             stroke: white;
+    //         }
+    //     }
+    // }
     &__button-login{
-        max-width: 160px;
-        background-color: #FFFFFF;
-        gap: 10px;
-        border: 1px solid #EBEEFA;
+        border-radius: 25px;
+        max-width: 170px;
+        border: 1px solid #FFFFFF;
         font-size: 16px;
         font-weight: 500;
         &:hover{
@@ -140,7 +143,7 @@
     .header-desktop{
         box-shadow: 0px 10px 40px rgba(32, 70, 210, 0.1);
         border-radius: 20px;
-        background: white;
+        // background: white;
     }
 }
 
@@ -168,7 +171,7 @@
             top: -15px;
             left: 0;
             filter: blur(5px);
-            background: #f0f0f0;
+            // background: #f0f0f0;
             z-index: -1;
         }
         &__wrapper {
@@ -181,7 +184,7 @@
             overflow: hidden;
             padding: 10px;
             height: auto;
-            background-color: #f8f9fc;
+            // background-color: #f8f9fc;
         }
         &__wrapper.active{
             background: none !important;
@@ -193,7 +196,7 @@
             max-width: 320px;
         }
         .header__actions.active {
-            background: white;
+            // background: white;
             padding: 10px;
             border-radius: 16px 16px 0 0;
         }
