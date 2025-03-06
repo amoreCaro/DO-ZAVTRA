@@ -2,10 +2,10 @@
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
   width: 100%;
   height: 72px;
-  margin: 20px auto 23px auto;
+  //   margin: 20px auto 23px auto;
   transition: position 1s ease-in;
   &__wrapper {
     display: flex;
@@ -15,7 +15,7 @@
     width: 100%;
     max-width: 1280px;
     height: 100%;
-    padding: 10px;
+    // padding: 10px;
     margin: 0 auto;
     transition: 0.5s ease;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -31,7 +31,7 @@
   }
   &__nav {
     position: relative;
-    left: -102px;
+
     ul {
       display: flex;
       align-items: center;
@@ -44,16 +44,26 @@
         transition: all 1s;
       }
     }
-    li:first-child:hover .header__mega-menu {
-      opacity: 1;
-      visibility: visible;
+
+    .sub-menu {
+      position: absolute;
+      z-index: -1;
+      visibility: hidden;
+      opacity: 0;
+    }
+    .menu-item-has-children:hover {
+      .sub-menu {
+        visibility: visible;
+        opacity: 1;
+        z-index: 1;
+      }
     }
     a {
       font-weight: 500;
-      font-size: 16px;
+      font-size: 18px;
       line-height: 18px;
       line-height: 100%;
-      font-weight: 500; 
+      font-weight: 500;
       color: #fff;
       transition: 0.4s ease;
       &:hover {
@@ -140,65 +150,64 @@
   }
 }
 .header__mega-menu {
-    transition: all 0.3s;
-    background-color: rgba(255, 255, 255, 0.7);
-    opacity: 70%;
-    position: absolute;
-    width: 339px;
-    visibility: hidden;
-    opacity: 0;
-    border-radius: 20px;
-    z-index: 100;
-    overflow: hidden;
-    padding: 20px;
-    
-    &-wrapper {
-      display: flex;
-      justify-content: left; // Ensures the content starts at the left side
-      text-align: left; 
-    }
-  
-    & ul {
-      display: flex;
-      flex-direction: column; // Aligns the list items vertically
-      text-align: left; // Aligns the text to the left in each list item
-      justify-content: left; // Aligns items to the start of the container
-      padding: 0; // Optionally remove padding if needed
-      margin: 0; // Optionally remove margin if needed
-    }
-  
-    a {
-      color: #000;
-    }
-  }
-  
-  .mega-menu__item {
-    text-align: left;
-    justify-content: flex-start; 
-    &:not(:last-child)  {
-        margin-bottom: 20px;
-    }
-    li {
-        text-align: left;
+  transition: all 0.3s;
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: 70%;
+  position: absolute;
+  width: 339px;
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 20px;
+  z-index: 100;
+  overflow: hidden;
+  padding: 20px;
 
-    }
+  &-wrapper {
+    display: flex;
+    justify-content: left; // Ensures the content starts at the left side
+    text-align: left;
   }
-  
+
+  & ul {
+    display: flex;
+    flex-direction: column; // Aligns the list items vertically
+    text-align: left; // Aligns the text to the left in each list item
+    justify-content: left; // Aligns items to the start of the container
+    padding: 0; // Optionally remove padding if needed
+    margin: 0; // Optionally remove margin if needed
+  }
+
+  a {
+    color: #000;
+  }
+}
+
+.mega-menu__item {
+  text-align: left;
+  justify-content: flex-start;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  li {
+    text-align: left;
+  }
+}
+
 .header-fixed {
-  background: transparent;
+  background-color: #2e2e2e;
   &::after {
     content: "";
     position: absolute;
     width: 100%;
     height: 100px;
-    top: -30px;
+    top: 0px;
     left: 0;
     filter: blur(5px);
     // background: linear-gradient(to bottom, #f0f0f0, transparent);
     z-index: -1;
   }
   .header-desktop {
-    box-shadow: 0px 10px 40px rgba(32, 70, 210, 0.1);
+ 
     // border-radius: 20px;
     // background: white;
   }
@@ -426,6 +435,9 @@
       height: 48px;
     }
     &__button-login {
+      display: none;
+    }
+    &__button-call {
       display: none;
     }
   }
