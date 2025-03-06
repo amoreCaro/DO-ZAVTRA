@@ -62,16 +62,36 @@
             </svg>
           </a>
           <div class="header__actions">
-         
             <div class="header__button header__button-menu">
-                <svg width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1H29" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                    <path d="M1 8H29" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                    <path d="M1 15H29" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                </svg>
+              <svg
+                width="30"
+                height="16"
+                viewBox="0 0 30 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1H29"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M1 8H29"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M1 15H29"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
             </div>
           </div>
-           <div class="header__dropdown">
+          <div class="header__dropdown">
             <nav class="header__nav">
               <ul>
                 <li>
@@ -153,28 +173,26 @@
           </a>
           <nav class="header__nav">
             <ul>
-                <li class="menu-item menu-item-has-children ">
-                    <a href="#" class="header__nav-link">
-                        Послуги
-                    </a>
-                    <ul class="sub-menu">
-                        <li class="menu-item">
-                            <a href="#">Кредит в один клік</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">Швидкий кредит на карту</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">Онлайн-кредит “до завтра”</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                  <a href="#">Умови кредитування</a>
+              <li class="menu-item menu-item-has-children">
+                <a href="#" class="header__nav-link"> Послуги </a>
+                <ul class="sub-menu">
+                  <li class="menu-item">
+                    <a href="#">Кредит в один клік</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">Швидкий кредит на карту</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">Онлайн-кредит “до завтра”</a>
+                  </li>
+                </ul>
               </li>
-                <li>
-                    <a href="#">Зворотній зв’язок</a>
-                </li>
+              <li>
+                <a href="#">Умови кредитування</a>
+              </li>
+              <li>
+                <a href="#">Зворотній зв’язок</a>
+              </li>
             </ul>
           </nav>
           <div class="header__actions">
@@ -189,15 +207,44 @@
       </header>
       <main class="main">
         <section id="hero" class="section hero">
-            <div class="hero__wrapper">     
-            </div>    
+          <div class="hero__wrapper"></div>
         </section>
+
+        <section id="loan" class="loan section animate-fade" data-delay="0.3s">
+          <div class="loan__container container h-title">
+            <div class="loan__title">
+              <h2>
+                Оформіть заявку <br />
+                <span>на отримання кредиту</span>
+              </h2>
+            </div>
+            <div class="loan__description">
+              <p>
+                Розрахунок приблизний, носить інформаційний характер і
+                побудований з розрахунку, що клієнт здійснює транзакцію в кредит
+                в торговельній точці.
+              </p>
+            </div>
+            <form class="loan-form">   
+              <div class="loan-form__group">
+                <span>+380</span>
+                <input type="text" placeholder="Enter your number" />
+              </div>
+            
+            
+            </form>
+            <button class="btn btn-primary loan__btn">
+              <span>Отримати гроші</span>
+            </button>
+          </div>
+        </section>
+
         <section
           id="credit"
           class="credit section animate-fade"
           data-delay="0.3s"
         >
-          <div class="credit__container container">
+          <div class="credit__container container h-title">
             <div class="credit__decor credit__decor-search">
               <img src="images/search.png" alt="" srcset="" />
             </div>
@@ -218,33 +265,29 @@
               </p>
             </div>
             <div class="credit__terms">
-
-                <div class="credit__item">
-                  <span class="credit__item-label"
-                    >Мінімальна сума кредиту</span
-                  >
-                  <span class="credit__item-value">1000 грн</span>
-                </div>
-                <div class="credit__item">
-                  <span class="credit__item-label" >
-                    Максимальна сума кредиту</span
-                  >
-                  <span class="credit__item-value">20 000 грн</span>
-
+              <div class="credit__item">
+                <span class="credit__item-label">Мінімальна сума кредиту</span>
+                <span class="credit__item-value">1000 грн</span>
+              </div>
+              <div class="credit__item">
+                <span class="credit__item-label">
+                  Максимальна сума кредиту</span
+                >
+                <span class="credit__item-value">20 000 грн</span>
               </div>
 
-                <div class="credit__item">
-                  <span class="credit__item-label"
-                    >Мінімальний строк сплати процентів</span
-                  >
-                  <span class="credit__item-value">2 дні</span>
-                </div>
-                <div class="credit__item">
-                  <span class="credit__item-label">Максимальний строк кредиту</span
-                  >
-                  <span class="credit__item-value">1 рік</span>
-                </div>
-
+              <div class="credit__item">
+                <span class="credit__item-label"
+                  >Мінімальний строк сплати процентів</span
+                >
+                <span class="credit__item-value">2 дні</span>
+              </div>
+              <div class="credit__item">
+                <span class="credit__item-label"
+                  >Максимальний строк кредиту</span
+                >
+                <span class="credit__item-value">1 рік</span>
+              </div>
             </div>
             <button class="btn btn-primary credit__btn">
               <span>Отримати гроші</span>
@@ -252,10 +295,7 @@
           </div>
         </section>
 
-           
-        
-
-           <!-- <section id="why" class="section why">
+        <!-- <section id="why" class="section why">
                 <div class="why__wrapper container">
                     <div class="why__content animate-fade" data-delay="0.3s">
                         <h2>Чому обирають нас</h2>
