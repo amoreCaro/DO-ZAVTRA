@@ -20,12 +20,12 @@
       color: #737373;
     }
   }
-  &-form {
+  &__form {
     margin-bottom: 56px;
     max-width: 629px;
     width: 100%;
   }
-  &-form__group {
+  &__form-group {
     input {
       height: 86px;
       width: 100%;
@@ -40,5 +40,39 @@
   &__btn {
     max-width: 304px;
     width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .loan {
+    padding: 20px;
+    &__container {
+    padding: 32px;
+        
+    }
+    &__title {
+      max-width: 257px;
+      width: 100%;
+      margin-bottom: 20px;
+      h2 {
+        font-size: 32px;
+        line-height: 36px;
+      }
+    }
+    &__description {
+        max-width: 208px;
+        width: 100%;
+        p {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+    &__form {
+        margin-bottom: 40px;
+    }
+    &__btn {
+        max-width: 260px;
+        width: 100%;
+      }
   }
 }
